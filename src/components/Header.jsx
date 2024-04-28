@@ -6,7 +6,6 @@ import Link from "next/link";
 import DarkModeSwitch from "./DarkModeSwitch";
 
 function Header() {
-  console.log("header compnent");
   return (
     <div className="flex justify-between items-center p-3 max-w-6xl mx-auto">
       <div className="flex gap-4">

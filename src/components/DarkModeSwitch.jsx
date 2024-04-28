@@ -6,7 +6,6 @@ import { MdLightMode, MdDarkMode } from "react-icons/md";
 import { useTheme } from "next-themes";
 
 function DarkModeSwitch() {
-  console.log("dak mode switch");
   const { theme, setTheme, systemTheme } = useTheme();
   const currentTheme = theme === "system" ? systemTheme : theme;
 
