@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header";
+import Providers from "./Providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -9,13 +10,17 @@ export const metadata = {
   description: "This is a move database clone",
 };
 
+{
+  /* Layout: Defining componentas in the layout will be available on all pages in the app */
+}
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* Layout: Defining componentas in the layout will be available on all pages in the app */}
-        <Header />
-        {children}
+        <Providers>
+          <Header />
+          {children}
+        </Providers>
       </body>
     </html>
   );
